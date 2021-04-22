@@ -14,7 +14,7 @@ public class Main {
         calculate.setSecondNumber(0);
 
         System.out.println("Multipication is: " + calculate.getMultiplicationResult());
-        System.out.println("Division is: " + calculate.getDivisionResult());*/
+        System.out.println("Division is: " + calculate.getDivisionResult());
 
 	Person p=new Person();
 	p.setFirstName("");
@@ -31,8 +31,15 @@ public class Main {
         System.out.println("Teen is : " +p.isTeen());
 
         p.setLastName("Smith");
-        System.out.println("FullName is : " +p.getFullName());
+        System.out.println("FullName is : " +p.getFullName());*/
 
+	Wall w= new Wall(5,4);
+	System.out.println("Area is: "+ w.getArea());
+
+	w.setHeight(-1.5);
+	System.out.println("Width is: " + w.getWidth());
+	System.out.println("Height is: "+ w.getHeight());
+	System.out.println("Area is: " + w.getArea());
     }
 
 }
