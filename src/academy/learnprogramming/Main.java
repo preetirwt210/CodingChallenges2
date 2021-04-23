@@ -49,7 +49,7 @@ public class Main {
 
 		Point point=new Point();
 		System.out.println("distance() : " + point.distance());
-		System.out.println("distance(second1) : " + Math.sqrt((6-3)*(6-3)+(5-1)*(5-1)));*/
+		System.out.println("distance(second1) : " + Math.sqrt((6-3)*(6-3)+(5-1)*(5-1)));
 	Carpet carpet=new Carpet(3.5);
 	System.out.println("Cost= "+ carpet.getCost());
 	Floor floor=new Floor(2.75,4.0);
@@ -59,7 +59,19 @@ public class Main {
 	carpet=new Carpet(1.5);
 	floor =new Floor(5.4,4.5);
 	cal=new Calculator(floor,carpet);
-	System.out.println("total = "+ cal.getTotalCost());
+	System.out.println("total = "+ cal.getTotalCost());*/
+
+	ComplexNumber one=new ComplexNumber(1.0,1.0);
+	ComplexNumber number=new ComplexNumber(2.5,-1.5);
+	one.add(1,1);
+	System.out.println("Real: "+ one.getReal());
+	System.out.println("Imaginary: "+ one.getImaginary());
+	one.subtract(number);
+		System.out.println("Real: "+ one.getReal());
+		System.out.println("Imaginary: "+ one.getImaginary());
+	number.subtract(one);
+		System.out.println("Real: "+ number.getReal());
+		System.out.println("Imaginary: "+ number.getImaginary());
     }
 
 }
