@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Teen is : " +p.isTeen());
 
         p.setLastName("Smith");
-        System.out.println("FullName is : " +p.getFullName());*/
+        System.out.println("FullName is : " +p.getFullName());
 
 	Wall w= new Wall(5,4);
 	System.out.println("Area is: "+ w.getArea());
@@ -40,6 +40,26 @@ public class Main {
 	System.out.println("Width is: " + w.getWidth());
 	System.out.println("Height is: "+ w.getHeight());
 	System.out.println("Area is: " + w.getArea());
+	Point first=new Point(6,5);
+	Point second=new Point(3,1);
+
+	System.out.println("distance(0,0) : " + first.distance(0,0));
+		System.out.println("distance(second) : " +first.distance(second));
+		System.out.println("distance(2,2) : " + first.distance(2,2));
+
+		Point point=new Point();
+		System.out.println("distance() : " + point.distance());
+		System.out.println("distance(second1) : " + Math.sqrt((6-3)*(6-3)+(5-1)*(5-1)));*/
+	Carpet carpet=new Carpet(3.5);
+	System.out.println("Cost= "+ carpet.getCost());
+	Floor floor=new Floor(2.75,4.0);
+	System.out.println("area= "+ floor.getArea());
+	Calculator cal=new Calculator(floor,carpet);
+	System.out.println("total = "+ cal.getTotalCost());
+	carpet=new Carpet(1.5);
+	floor =new Floor(5.4,4.5);
+	cal=new Calculator(floor,carpet);
+	System.out.println("total = "+ cal.getTotalCost());
     }
 
 }
