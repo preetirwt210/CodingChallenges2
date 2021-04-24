@@ -59,7 +59,7 @@ public class Main {
 	carpet=new Carpet(1.5);
 	floor =new Floor(5.4,4.5);
 	cal=new Calculator(floor,carpet);
-	System.out.println("total = "+ cal.getTotalCost());*/
+	System.out.println("total = "+ cal.getTotalCost());
 
 	ComplexNumber one=new ComplexNumber(1.0,1.0);
 	ComplexNumber number=new ComplexNumber(2.5,-1.5);
@@ -71,7 +71,17 @@ public class Main {
 		System.out.println("Imaginary: "+ one.getImaginary());
 	number.subtract(one);
 		System.out.println("Real: "+ number.getReal());
-		System.out.println("Imaginary: "+ number.getImaginary());
+		System.out.println("Imaginary: "+ number.getImaginary());*/
+
+	Circle circle=new Circle(3.75);
+	System.out.println("circle.radius= "+ circle.getRadius());
+	System.out.println("circle.area= "+ circle.getArea());
+
+	Cylinder cylinder=new Cylinder(5.55, 7.25);
+        System.out.println("cylinder.radius= "+ cylinder.getRadius());
+        System.out.println("cylinder.height= "+ cylinder.getHeight());
+        System.out.println("cylinder.area= "+ cylinder.getArea());
+        System.out.println("cylinder.volume= "+ cylinder.getVolume());
     }
 
 }
