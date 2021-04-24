@@ -71,7 +71,7 @@ public class Main {
 		System.out.println("Imaginary: "+ one.getImaginary());
 	number.subtract(one);
 		System.out.println("Real: "+ number.getReal());
-		System.out.println("Imaginary: "+ number.getImaginary());*/
+		System.out.println("Imaginary: "+ number.getImaginary());
 
 	Circle circle=new Circle(3.75);
 	System.out.println("circle.radius= "+ circle.getRadius());
@@ -81,7 +81,20 @@ public class Main {
         System.out.println("cylinder.radius= "+ cylinder.getRadius());
         System.out.println("cylinder.height= "+ cylinder.getHeight());
         System.out.println("cylinder.area= "+ cylinder.getArea());
-        System.out.println("cylinder.volume= "+ cylinder.getVolume());
+        System.out.println("cylinder.volume= "+ cylinder.getVolume());*/
+
+	Rectangle r=new Rectangle(5,10);
+	System.out.println("rectangle.width= "+ r.getWidth());
+	System.out.println("rectangle.length= "+ r.getLength());
+	System.out.println("rectangle.area= "+ r.getArea());
+	Cuboid c= new Cuboid(5,10,5);
+        System.out.println("Cuboid.width= "+ c.getWidth());
+        System.out.println("Cuboid.length= "+ c.getLength());
+        System.out.println("Cuboid.area= "+ c.getArea());
+        System.out.println("Cuboid.height= "+ c.getHeight());
+        System.out.println("Cuboid.volume= "+ c.getVolume());
+
+
     }
 
 }
