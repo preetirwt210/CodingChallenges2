@@ -92,7 +92,7 @@ public class Main {
         System.out.println("Cuboid.length= "+ c.getLength());
         System.out.println("Cuboid.area= "+ c.getArea());
         System.out.println("Cuboid.height= "+ c.getHeight());
-        System.out.println("Cuboid.volume= "+ c.getVolume());*/
+        System.out.println("Cuboid.volume= "+ c.getVolume());
        Wall wall1=new Wall("West");
         Wall wall2=new Wall("East");
         Wall wall3=new Wall("South");
@@ -103,7 +103,16 @@ public class Main {
         Lamp lamp=new Lamp("Classic",false,75);
         Bedroom bedroom=new Bedroom("Preeti Rawat", wall1,wall2,wall3,wall4,ceiling,bed,lamp);
         bedroom.makeBed();
-        bedroom.getLamp().turnOn();
+        bedroom.getLamp().turnOn();*/
+
+	Printer printer=new Printer(50,true);
+	System.out.println(printer.addToner(50));
+	System.out.println("initial page count = "+ printer.getPagesPrinted());
+	int pagesPrinted=printer.printPages(4);
+	System.out.println("pages printed was= "+ pagesPrinted + "new total print count for printer: "+ printer.getPagesPrinted());
+    pagesPrinted= printer.printPages(2);
+        System.out.println("pages printed was= "+ pagesPrinted + "new total print count for printer: "+ printer.getPagesPrinted());
+
     }
 
 }
